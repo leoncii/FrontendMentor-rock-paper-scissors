@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d ./dist/scissiors-bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
