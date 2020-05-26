@@ -66,8 +66,7 @@ export const Token = ({ name, onClick }) => {
   return (
     <Items color={color} onClick={handleClick} name={name}>
       <div className='box'>
-        {/* <Img src={`../../images/icon-${name}.svg`} alt="paper-image" /> */}
-        <Img src={`../../../images/icon-${name}.svg`} alt="paper-image" />
+        <Img src={`../../images/icon-${name}.svg`} alt="paper-image" />
       </div>
     </Items>
   )

@@ -82,10 +82,10 @@ const TableGame = () => {
     setPick(name)
     // const machinePicked = 
     const pickedInterval = await intervalMachinePicked()
-    console.log("[Machine choose]:", machinePicked)
+    // console.log("[Machine choose]:", machinePicked)
     const finalyResult = comparingPick(name, pickedInterval)
     setShowResult(finalyResult)
-    console.log(finalyResult)
+    // console.log(finalyResult)
   }
   const intervalMachinePicked = () => {
     return new Promise((res, rej) => {
@@ -93,7 +93,7 @@ const TableGame = () => {
       const interval = setInterval(() => {
         newPick = choosenItems[getRandomNumber(0, 3)]
         setMachinePicked(newPick)
-      }, 500)
+      }, 100)
       setTimeout(() => {
         clearInterval(interval)
         res(newPick)
