@@ -43,8 +43,8 @@ const Rules = () => {
         visible && (
           <div className="rules-overlay">
             <h1>Rules</h1>
-            <img src="../../../public/images/image-rules.svg" alt="rules overlay" />
-            <img className="close-button" onClick={handleClick} src="../../../public/images/icon-close.svg" alt="close overlay" />
+            <img src="../public/images/image-rules.svg" alt="rules overlay" />
+            <img className="close-button" onClick={handleClick} src="../public/images/icon-close.svg" alt="close overlay" />
           </div>
         )
       }
