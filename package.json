@@ -8,6 +8,7 @@
     "build": "webpack",
     "dev": "webpack-dev-server --history-api-fallback",
     "deploy": "gh-pages -d dist",
+    "deploy:master": "gh-pages -b master -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
