@@ -33,7 +33,7 @@ function Header() {
       {/* <Score /> */}
       <Div>
         <Small>Score</Small>
-        <P>12</P>
+        <P>100</P>
       </Div>
     </HeaderStyled>
   )
