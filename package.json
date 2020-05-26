@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
-  "homepage": "https://leoncii.github.io/FrontendMentor-rock-paper-scissors/",
+  "homepage": "https://leoncii.github.io/FrontendMentor-rock-paper-scissors",
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --history-api-fallback",

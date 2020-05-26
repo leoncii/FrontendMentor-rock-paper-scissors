@@ -66,7 +66,8 @@ export const Token = ({ name, onClick }) => {
   return (
     <Items color={color} onClick={handleClick} name={name}>
       <div className='box'>
-        <Img src={`../public/images/icon-${name}.svg`} alt="paper-image" />
+        {/* <Img src={`../public/images/icon-${name}.svg`} alt="paper-image" /> */}
+        <Img src={`https://res.cloudinary.com/djc1umong/image/upload/v1590527652/icon-${name}.svg`} alt="paper-image" />
       </div>
     </Items>
   )
