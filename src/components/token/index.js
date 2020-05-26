@@ -9,9 +9,9 @@ const Items = Styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: ${({ name }) => (name === 'default') ? 'transparent' : 'white'};
     cursor: pointer;
-    /* position:relative; */
+    position:relative;
     z-index:2;
     box-shadow:0 5px 0 ${(props) => props.color.border};
     &:active{
@@ -47,18 +47,31 @@ const colors = {
   scissors: {
     base: '#eca8le',
     border: '#c76c14',
+  },
+  default: {
+    base: 'trasparent',
+    border: 'trasparent',
   }
 }
 
-export const Token = ({ name }) => {
+export const Token = ({ name, onClick }) => {
+  // let name = name
+  function handleClick() {
+    console.log('[Name]:', name)
+    onClick(name)
+  }
+
+  const color = colors[name]
 
   return (
-    <Items color={colors[name]}>
+    <Items color={color} onClick={handleClick} name={name}>
       <div className='box'>
         <Img src={`../../../images/icon-${name}.svg`} alt="paper-image" />
       </div>
     </Items>
   )
+
 }
+
 
 // export  Token
