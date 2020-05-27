@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
       /* background-image: radial-gradient(circle at top, #1f3757 30%, #131537 100%);
       background-repeat: no-repeat; */
       /* background: linear-gradient(to top,#131537 25% , #131537 0%, #1f3757 75%); */
-      background: blueviolet;
+      background: brown;
       min-height: 100%;
       z-index:0;
   }
